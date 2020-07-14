@@ -1,2 +1,2 @@
 # EmbeddedSystems
-A Raspberry pi ChatBot wriiten in python
+A Raspberry pi ChatBot written in python
