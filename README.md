@@ -1,2 +1,2 @@
 # EmbeddedSystems
-#CLass Assignments and Private practice Notes
+A Raspberry pi ChatBot wriiten in python
