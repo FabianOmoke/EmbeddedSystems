@@ -22,19 +22,20 @@ def dictionary_check(message):
         return ""
 
 
-print(len(random_replies), '\n')
-print("What would you like to talk about?")
+print("We have " + str(len(random_replies)) + " for now. But enjoy! \n")
+print("--- RASPBERRY CHAT BOT --- \n")
 user_talks = ""
 
 while user_talks != 'bye':
     user_talks = ""
     while user_talks == "":
-        user_talks = input("What would you like to say")
-    smart_response = dictionary_check(user_talks)
+        user_talks = input("What would you like to say: ")
+        smart_response = dictionary_check(user_talks)
     if smart_response:
         print(smart_response)
     else:
-        reply_chosen = random.randint(1, len(random_replies) )-1
-    print(random_replies[reply_chosen])
-    random_replies[reply_chosen] = user_talks
+        reply_chosen = random.randint(1, len(random_replies)-1)
+        print(random_replies[reply_chosen])
+        random_replies[reply_chosen] = user_talks
 print("Goodbye. Thanks for chatting today!")
+
